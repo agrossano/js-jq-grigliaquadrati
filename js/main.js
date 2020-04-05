@@ -24,11 +24,6 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
-
   //Funzione che genera 64 div con classe square
   function randomSquares() {
     for (var i = 0; i < 64; i++) {
@@ -67,20 +62,18 @@ $(document).ready(function () {
     if ($(this).hasClass('clicked')) {
     } else if ($(this).hasClass('red')) {
       $(this).addClass('clicked');
-      $(this).css("background-color", "brown");
+      $(this).css("background-color", "#E0312D");
       redPoint++;
       $('.red-score').html(redPoint);
     } else {
       $(this).addClass('clicked');
-      $(this).css("background-color", "green");
+      $(this).css("background-color", "#C1E73A");
       greenPoint++;
       $('.green-score').html(greenPoint);
       console.log(greenPoint)
     }
   }
   )
-
-
 
 });
 
