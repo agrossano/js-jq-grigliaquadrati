@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  height: 60vh;
+  width: 60vh;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: -8px 10px 8px #000000;
+}
+
+.score {
+  font-size: 25px;
+  color: rgb(29, 29, 29);
+  text-shadow: 1px 0px 2px #00012b;
+  justify-content: space-around;
+  display: flex;
+  width: 60vh;
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.square {
+  width: calc(60vh / 8);
+  border: 1px solid rgb(86, 90, 90);
+  background-color: #fff;
+}
+
+.square.green {
+}
+.square.red {
+}
+
+.new-game {
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+.new-game h1 {
+  cursor: pointer;
+}
